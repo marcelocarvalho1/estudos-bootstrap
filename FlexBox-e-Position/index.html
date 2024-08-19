@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Exemplo com Flexbox e Position</title> 
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+        <style> 
+        .box { width: 100px; height: 100px; margin: 10px; } 
+        </style> 
+    </head> 
+    <body> 
+        <div class="container mt-5 d-flex justify-content-center ali<gn-items-center" style="height: 100vh;"> 
+        <div class="d-flex justify-content-center align-items-center w-75 h-75 bg-light position-relative"> <div class="box bg-primary w-25 h-25"></div>  <!-- Position Relative: A div que contém as caixas tem a classe position-relative. Isso significa que qualquer elemento dentro dela com position-absolute se posicionará em relação a ela.-->
+        <div class="box bg-secondary w-25 h-25"></div> 
+        <div class="box bg-success w-25 h-25"></div> 
+        <div class="box bg-danger w-25 h-25 position-absolute" style="top: 0; left: 0;"></div> <!-- Position Absolute: A última caixa (bg-danger) tem a classe position-absolute e estilos top: 0; left: 0;, o que faz com que ela se posicione no canto superior esquerdo do elemento pai (a div com position-relative).-->
+    </div> </div> <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+</body> 
+</html>
